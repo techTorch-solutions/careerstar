@@ -11,8 +11,7 @@ const Links = () => {
         </>
     )
 }
-const NavLinks = () => {
-    const [open, setOpen] = useState(false)
+const NavLinks = ({ open, setOpen }) => {
     const toggleNav = () => {
         setOpen(!open)
     }

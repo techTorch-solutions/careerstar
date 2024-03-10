@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         start: '#000 0%',
-        customTeal: '#51C4E8 500%',
+        customTeal: '#51C4E8 350%',
         buttons: '#33A09A'
       },
       fontFamily: {

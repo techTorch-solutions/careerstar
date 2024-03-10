@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavLinks from './Links'
 const Navbar = () => {
+    const [open, setOpen] = useState(false)
     return (
-        <header className='font-poppins flex justify-around items-center text-white top-0 sticky flex-wrap min-h-20 h-auto bg-gradient-to-b from-start to-customTeal'>
+        <header className={`font-poppins flex justify-around items-center text-white top-0 sticky flex-wrap ${open ? 'min-h-72' : 'min-h-20'} bg-gradient-to-b from-start to-customTeal`}>
             <div>
-
                 <h1 className='text-2xl font-semibold'>Career Star</h1>
             </div>
-            <NavLinks />
+            <NavLinks open={open} setOpen={setOpen} />
         </header>
     )
 }
