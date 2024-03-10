@@ -4,7 +4,7 @@ const Links = () => {
 
     return (
         <>
-            <Link className='my-3 mx-16 md:m-0' to={'/home'}>Home</Link>
+            <Link className='my-3 mx-16 md:m-0' to={'/'}>Home</Link>
             <Link className='my-3 mx-16 md:m-0'>About</Link>
             <Link className='my-3 mx-16 md:m-0'>Services</Link>
             <Link className='bg-buttons my-3 mx-16 md:m-0 font-semibold text-black px-2 rounded-lg'>Contact Us</Link>

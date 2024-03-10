@@ -25,7 +25,7 @@ const Footer = () => {
                     </div>
 
                     <div className="contact h-full flex flex-col text-black justify-start">
-                        <h1 className='text-xl font-bold mb-2 text-white underline underline-offset-8'>
+                        <h1 className='uppercase text-xl font-bold mb-2 text-white underline underline-offset-8'>
                             Career Star
                         </h1>
                         <div className="flex justify-start icons my-2">
