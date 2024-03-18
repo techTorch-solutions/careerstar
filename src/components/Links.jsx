@@ -1,14 +1,17 @@
 /* eslint-disable no-unused-vars */
-import  { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import ContactModal from './ContactModal'
+import WhatsAppModal from './WhatsAppModal'
 const Links = () => {
-
+    const [open, setOpen] = useState(false)
     return (
         <>
             <Link className='my-3 mx-16 md:m-0' to={'/'}>Home</Link>
             <Link className='my-3 mx-16 md:m-0'>About</Link>
-            <Link className='my-3 mx-16 md:m-0'>Services</Link>
-            <Link className='bg-buttons my-3 mx-16 md:m-0 font-semibold text-black px-2 rounded-lg'>Contact Us</Link>
+            <Link className='my-3 mx-16 md:m-0' to={'/services'}>Services</Link>
+            <Link onClick={() => setOpen(true)} className='bg-buttons my-3 mx-16 md:m-0 font-semibold text-black px-2 rounded-lg'>Contact Us</Link>
+            <ContactModal open={open} onClose={() => setOpen(false)} />
         </>
     )
 }
@@ -24,8 +27,8 @@ const NavLinks = ({ open, setOpen }) => {
                     <Links />
                 </div>
                 <div onClick={toggleNav} className='md:hidden flex justify-end'>
-                    {open ? <i className="fa-solid fa-x"></i> :
-                        <i className="fa-solid fa-bars"></i>
+                    {open ? <i className="fa-solid fa-x  text-white"></i> :
+                        <i className="fa-solid fa-bars text-white"></i>
                     }
                 </div>
             </nav>

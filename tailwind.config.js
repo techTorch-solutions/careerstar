@@ -12,7 +12,8 @@ export default {
         buttons: '#33A09A'
       },
       fontFamily: {
-        poppins: ['Poppins']
+        poppins: ['Poppins'],
+        ubuntu: ['Ubuntu']
       }
     },
   },
