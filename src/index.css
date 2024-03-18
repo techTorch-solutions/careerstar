@@ -3,5 +3,42 @@
 @tailwind utilities;
 
 body {
+<<<<<<< HEAD
     background-color: black;
+=======
+  background-color: #141313;
+  overflow-x: hidden;
+}
+
+* {
+  color: white;
+  font-family: 'Poppins';
+}
+
+i,
+span {
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  color: black;
+}
+
+i:hover {
+  transform: scale(1.3);
+}
+
+#card * {
+  color: black;
+}
+
+#services {
+  background-image: url(./components/images/Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.slick-slide>div {
+  display: flex;
+  margin: 0px 10px;
+>>>>>>> 7d604184f74ec39bd57d7a8b03d9bdd7ff214b66
 }
