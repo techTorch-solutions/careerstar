@@ -3,6 +3,7 @@ import { useState } from 'react'
 import WhatsAppModal from './WhatsAppModal'
 import './footer.css'
 import { Link } from 'react-router-dom'
+import Logo from './images/icons/logo.svg'
 
 const Footer = () => {
 
@@ -34,9 +35,7 @@ const Footer = () => {
                         </div>
 
                         <div className="contact h-full flex flex-col text-black justify-start">
-                            <h1 className='uppercase text-xl font-bold mb-2 text-white underline underline-offset-8'>
-                                Career Star
-                            </h1>
+                        <img src={Logo} className="h-20 p-2  brightness-0 invert" />
                             <div className="flex justify-start icons my-2">
                                 <h1 className='font-semibold'>
                                     Privacy Policy | Terms & Conditions
