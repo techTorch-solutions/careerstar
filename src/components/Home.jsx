@@ -10,6 +10,7 @@ import hero2 from './images/profile.png'
 import WhatsAppModal from './WhatsAppModal'
 import ContactModal from './ContactModal'
 import { useState } from 'react'
+import Logo from './images/icons/logo.svg'
 
 export default function Home() {
 
@@ -101,8 +102,10 @@ export default function Home() {
 
       <div className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
         <h1 className='md:text-[90px] text-[50px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>About Me</h1>
-        <h2 className='text-[30px] font-bold text-center my-10'>Benson</h2>
-
+       <div className='flex place-content-center m-[auto] mt-10 '>
+        <h2 className='text-[30px] font-bold text-center my-[auto]'>Benson</h2>
+        <img src={Logo} className="h-20 p-2 brightness-0 invert " />
+        </div>
         <div className='flex flex-col md:flex-row m-[auto] gap-20 items-center my-10 '>
           <p className='text-[15px] md:text-[25px] pt-5 md:max-w-[70vw] max-w-[100vw] text-center my-[auto]'>Benson is an hospitality learning & Development (L&D) Enthusiast, passionate trainer and a career coach.
             He is a certified international service standards trainer by Forbes travel Guide and has supported numerous organizations, professionals and students around the world to leverage their potential and elevate their influence.
