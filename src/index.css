@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 body {
-<<<<<<< HEAD
-    background-color: black;
-=======
   background-color: #141313;
   overflow-x: hidden;
 }
@@ -40,5 +37,4 @@ i:hover {
 .slick-slide>div {
   display: flex;
   margin: 0px 10px;
->>>>>>> 7d604184f74ec39bd57d7a8b03d9bdd7ff214b66
 }

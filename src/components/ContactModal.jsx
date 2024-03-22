@@ -41,7 +41,8 @@ const ContactModal = ({ open, onClose }) => {
                         </div>
 
                         <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
-                            <form className="space-y-6" action="#" method="POST">
+                            <form className="space-y-6" action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="ed48c7b5-a330-43da-985c-298b4d6a78f0" />
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium leading-6 text-white  ">
                                         Name

@@ -7,11 +7,10 @@ export default function Cards(props) {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2000,
+    speed: 1000,
     autoplaySpeed: 3000,
   };
 
