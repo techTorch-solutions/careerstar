@@ -12,6 +12,7 @@ import ContactModal from './ContactModal'
 import { useState } from 'react'
 import Logo from './images/icons/logo.svg'
 import hello from './images/hello.png'
+import LinkIcon from './images/icons/linkIcon.svg'
 
 export default function Home() {
 
@@ -101,20 +102,21 @@ export default function Home() {
         </div>
       </div>
 
-      <div class="flex flex-col gap-10 justify-center content-center">
-      <h2 class=" text-primaryFont text-[75px] font-poppins font-bold justify-center text-center">Join our weekly sessions</h2>
-      <div class=" justify-center content-center m-auto w-[85%]">
-        <div class="grid grid-cols-3 justify-center gap-14">
-          <div class=" col-span-2">
-            <h3 class=" text-secondaryFont text-[30px] font-extrabold font-mulish mb-3">Elevate your growth</h3>
-            <p class=" text-secondaryFont text-justify text-[30px] font-mulish">Experience transformative growth with our weekly Career Meet sessions, held every Wednesday on Google Meet. Join us as we dive deep into topics such as goal setting, mindset mastery, and overcoming challenges. Each session is designed to provide you with actionable insights, personalized feedback, and ongoing support to help you achieve your career goals and unlock your full potential.</p>
+      <div className="flex flex-col gap-10 w-[70%] justify-center content-center m-[auto]">
+      <h2 className='md:text-[75px] text-[25px] text-[#46B5D8] font-bold text-center '>Join our weekly sessions</h2>
+      <div className=" ">
+        <div className="grid grid-cols-3 justify-center gap-14 ">
+          <div className=" col-span-2 ">
+            <h3 className='text-[30px] font-bold'>Elevate your growth</h3>
+            <p  className='text-[15px] md:text-[25px] pt-5 md:max-w-[40vw] max-w-[90vw]'>Experience transformative growth with our weekly Career Meet sessions, held every Wednesday on Google Meet. Join us as we dive deep into topics such as goal setting, mindset mastery, and overcoming challenges. Each session is designed to provide you with actionable insights, personalized feedback, and ongoing support to help you achieve your career goals and unlock your full potential.</p>
           </div>
-          <div class=" col-span-1">
+          <div className=" col-span-1  m-[auto]">
             <img src={hello} alt="hello" width={500} height={500}/>
           </div>
         </div>
       </div>
-      <h3 class=" text-secondaryFont text-center font-mulish text-[35px] font-bold mt-4">Ready to Get Started?</h3>
+      <h3 className=" text-secondaryFont text-center font-mulish text-[35px] font-bold mt-4">Ready to Get Started?</h3>
+      <button onClick={() =>  setOpenContact(true)}  className='flex bg-[#33A09A] rounded-lg p-3 text-sm md:text-lg md:px-8 px-4 font-bold m-[auto]'>Ask for Link<img src={LinkIcon} className="ml-4 md:w-8 w-[1.2rem]" /></button>
       </div>
 
       <div className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
@@ -124,7 +126,7 @@ export default function Home() {
           <img src={Logo} className="h-20 p-2 brightness-0 invert " />
         </div>
         <div className='flex flex-col md:flex-row m-[auto] gap-20 items-center my-10 '>
-          <p className='text-[15px] md:text-[25px] pt-5 md:max-w-[70vw] max-w-[100vw] text-center my-[auto]'>Benson is an hospitality learning & Development (L&D) Enthusiast, passionate trainer and a career coach.
+          <p  className='text-[15px] md:text-[25px] pt-5 md:max-w-[40vw] max-w-[90vw]'>Benson is an hospitality learning & Development (L&D) Enthusiast, passionate trainer and a career coach.
             He is a certified international service standards trainer by Forbes travel Guide and has supported numerous organizations, professionals and students around the world to leverage their potential and elevate their influence.
           </p>
           <img src={hero2} className="w-80" />
