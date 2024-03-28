@@ -61,7 +61,7 @@ export default function Home() {
       </div>
 
       <div className='my-10'>
-        <h1 className='md:text-[90px] text-[25px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>Why have a Coach ?</h1>
+        <h1 className='md:text-[75px] text-[25px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>Why have a Coach ?</h1>
 
         <div className='flex flex-col-reverse md:flex md:flex-row md:w-[70vw] w-[90vw]  m-[auto] gap-20 my-20'>
           <div className='m-[auto] text-center md:text-left'>
@@ -102,15 +102,15 @@ export default function Home() {
       </div>
 
       <div class="flex flex-col gap-10 justify-center content-center">
-      <h2 class=" text-primaryFont text-[90px] font-poppins font-bold justify-center text-center">Join our weekly sessions</h2>
-      <div class=" justify-center content-center m-auto w-[80%]">
-        <div class="grid grid-cols-2 gap-20">
-          <div>
+      <h2 class=" text-primaryFont text-[75px] font-poppins font-bold justify-center text-center">Join our weekly sessions</h2>
+      <div class=" justify-center content-center m-auto w-[85%]">
+        <div class="grid grid-cols-3 justify-center gap-14">
+          <div class=" col-span-2">
             <h3 class=" text-secondaryFont text-[30px] font-extrabold font-mulish mb-3">Elevate your growth</h3>
             <p class=" text-secondaryFont text-justify text-[30px] font-mulish">Experience transformative growth with our weekly Career Meet sessions, held every Wednesday on Google Meet. Join us as we dive deep into topics such as goal setting, mindset mastery, and overcoming challenges. Each session is designed to provide you with actionable insights, personalized feedback, and ongoing support to help you achieve your career goals and unlock your full potential.</p>
           </div>
-          <div class=" w-[507px] h-[507px]">
-            <img src={hello} alt="hello" />
+          <div class=" col-span-1">
+            <img src={hello} alt="hello" width={500} height={500}/>
           </div>
         </div>
       </div>
@@ -118,7 +118,7 @@ export default function Home() {
       </div>
 
       <div className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
-        <h1 className='md:text-[90px] text-[50px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>About Me</h1>
+        <h1 className='md:text-[75px] text-[50px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>About Me</h1>
         <div className='flex place-content-center m-[auto] mt-10 '>
           <h2 className='text-[30px] font-bold text-center my-[auto]'>Benson</h2>
           <img src={Logo} className="h-20 p-2 brightness-0 invert " />
