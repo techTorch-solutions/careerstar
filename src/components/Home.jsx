@@ -1,5 +1,5 @@
 //import React from 'react'
-import hero1 from './images/Hero_img.png'
+import hero1 from './images/h2.jpeg'
 import wpIcon from './images/icons/Group.png'
 import calIcon from './images/icons/calendar-clock.png'
 import teamImg from './images/about-our-team.png'
@@ -100,17 +100,40 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
+      <div id='aboutme' className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
         <h1 className='md:text-[90px] text-[50px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>About Me</h1>
-       <div className='flex place-content-center m-[auto] mt-10 '>
-        <h2 className='text-[30px] font-bold text-center my-[auto]'>Benson</h2>
-        <img src={Logo} className="h-20 p-2 brightness-0 invert " />
+        <div className='flex place-content-center m-[auto] mt-10 '>
+          <h2 className='text-[30px] font-bold text-center my-[auto]'>Benson</h2>
+          <img src={Logo} className="h-20 p-2 brightness-0 invert " />
+        </div>
+        <div>
+          <h1 className='text-[20px] text-[#46B5D8] font-bold text-center my-[auto]'>
+            Hospitality Learning & Development Enthusiast | Trainer | Career Coach
+          </h1>
         </div>
         <div className='flex flex-col md:flex-row m-[auto] gap-20 items-center my-10 '>
-          <p className='text-[15px] md:text-[25px] pt-5 md:max-w-[70vw] max-w-[100vw] text-center my-[auto]'>Benson is an hospitality learning & Development (L&D) Enthusiast, passionate trainer and a career coach.
-            He is a certified international service standards trainer by Forbes travel Guide and has supported numerous organizations, professionals and students around the world to leverage their potential and elevate their influence.
+          <p className='text-[15px] md:text-[25px] pt-5 md:max-w-[70vw] max-w-[100vw] text-center md:text-left my-[auto]'>I am a passionate trainer and career coach with extensive experience in Learning & Development and Service excellence. I have helped <span className='text-buttons font-bold'>50+</span> organizations and countless professionals around the world leverage their potential and elevate their influence. I offer a variety of customized programs and services to prepare Employees, Supervisors, Managers and Senior Leaders for success in their current & future roles.
           </p>
           <img src={hero2} className="w-80" />
+        </div>
+        <div className='text-center'>
+          <h2 className='text-[#46B5D8] font-bold  text-[30px]'>
+            MY QUICK CREDENTIALS CHECKLIST
+          </h2>
+          <ul className='md:text-[25px] text-[15px]'>
+            <li>
+              Bachelor’s degree in business administration (University of West London - UAE)
+            </li>
+            <li>
+              Have successfully built and exited a reputable staffing business.
+            </li>
+            <li>
+              Empathetic, Active listener and genuinely interested.
+            </li>
+            <li>
+              Assisted <span className='text-buttons font-bold'>700+</span> job seekers land their dream jobs.
+            </li>
+          </ul>
         </div>
       </div>
       <WhatsAppModal open={openWhatsapp} onClose={() => setOpenWhatsapp(false)} />

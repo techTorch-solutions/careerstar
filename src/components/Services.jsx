@@ -5,12 +5,13 @@ import chess from './images/strategy2.png'
 import wpIcon from './images/icons/Group.png'
 import calIcon from './images/icons/calendar-clock.png'
 import Modal from "./Modal";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import ContactModal from "./ContactModal";
 import WhatsAppModal from "./WhatsAppModal";
 
 
 export default function Services() {
+  const scrollRef = useRef()
 
   const [openWhatsapp, setOpenWhatsapp] = useState(false)
   const [openContact, setOpenContact] = useState(false)
@@ -38,16 +39,19 @@ export default function Services() {
     {
       theme: 'white',
       title: 'Life Coaching',
+      id: 'life',
       text: "Unlock your full potential and live a more fulfilling life with our personalized life coaching services. Whether you're seeking clarity, balance, or direction, our experienced life coaches are here to support you every step of the way."
     },
     {
       theme: 'blue',
       title: 'Career Coaching',
+      id: 'career',
       text: "Take your career to new heights with our expert career coaching services. Whether you're looking to land your dream job, advance in your current role, or make a career transition, our career coaches provide the guidance and support you need to achieve your professional goals."
     },
     {
       theme: 'white',
       title: 'Leadership Coaching',
+      id: 'leadership',
       text: "Unlock your full potential and live a more fulfilling life with our personalized life coaching services. Whether you're seeking clarity, balance, or direction, our experienced life coaches are here to support you every step of the way."
     }
   ]
@@ -55,16 +59,19 @@ export default function Services() {
   const services = [
     {
       title: 'Life Coaching',
+      id: 'life',
       desc: 'Transform your life with our personalized coaching. Our compassionate coaches help you achieve fulfillment, balance, and success. Whether clarifying goals or navigating transitions, we provide guidance and accountability. Tailored sessions and proven strategies empower you to create a life you love',
       img: painter
     },
     {
       title: 'Career Coaching',
+      id: 'career',
       desc: 'Begin your career journey with our coaching services. Our expert coaches help you land your dream job, navigate transitions, and advance your career. From resume optimization to interview prep, we provide the tools for success. Partner with us to achieve your career goals.',
       img: scholar
     },
     {
       title: 'Leadership Coaching',
+      id: 'leadership',
       desc: 'Refine your leadership with our coaching. Our experienced coaches offer personalized guidance to enhance skills, communication, and success. Lead confidently, inspire your team, and achieve your goals through targeted strategies and sessions',
       img: chess
     },
@@ -76,7 +83,7 @@ export default function Services() {
       <Cards data={data} />
 
       {services.map((service) => (
-        <div key={service.title} className="flex md:flex-row flex-col w-[90vw] items-center md:w-[70vw] my-20">
+        <div id={service.id} key={service.title} className="flex md:flex-row flex-col w-[90vw] items-center md:w-[70vw] my-20">
           <div className="m-[auto] md:text-left text-center">
             <h1 className='md:text-[60px] md:text-left text-center text-[30px] text-[#46B5D8] font-bold my-4 '>{service.title}</h1>
             <p className='text-[15px] md:text-[25px] pt-5 '>{service.desc}</p>

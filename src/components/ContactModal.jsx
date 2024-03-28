@@ -12,7 +12,7 @@ const ContactModal = ({ open, onClose }) => {
                             <h2 className="mt-1 text-left text-2xl font-bold leading-9 tracking-tight text-gray-900">
                                 Let's Shine Together
                             </h2>
-                            
+
                         </div>
 
                         <div className="mt-1 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -27,17 +27,17 @@ const ContactModal = ({ open, onClose }) => {
                             </div>
                         </div>
                         <div className="mt-4 flex icons ">
-                            <i className="fa-brands fa-facebook-f mr-2 text-2xl "></i>
-                            <i className='fa-brands fa-x-twitter mx-2 text-2xl '></i>
+                            <i className="fa-brands fa-facebook-f mr-2 text-2xl"></i>
+                            <i className='fa-brands fa-x-twitter mx-2 text-2xl'></i>
                             <i className='fa-brands fa-instagram mx-2 text-2xl' ></i>
-                            <i className='fa-brands fa-linkedin mx-2 text-2xl '></i>
-                            <i className='fa-brands fa-whatsapp mx-2 text-2xl '></i>
+                            <i className='fa-brands fa-linkedin mx-2 text-2xl'></i>
+                            <i className='fa-brands fa-whatsapp mx-2 text-2xl'></i>
                         </div>
                     </div>
 
                     <div className="flex md:w-[35vw] w-[80vw] min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-12 bg-buttons rounded-xl">
                         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                        <img src={Logo} className="h-20 p-2 brightness-0 invert m-[auto]" />
+                            <img src={Logo} className="h-20 p-2 brightness-0 invert m-[auto]" />
                         </div>
 
                         <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">

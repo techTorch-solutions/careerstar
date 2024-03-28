@@ -14,6 +14,19 @@ export default function Cards(props) {
     autoplaySpeed: 3000,
   };
 
+  const scrollToService = (title) => {
+    const serviceElement = document.getElementById(title);
+    const offset = 50; // Adjust this value as needed
+
+    if (serviceElement) {
+      const topPos = serviceElement.getBoundingClientRect().top;
+      window.scrollTo({
+        top: window.pageYOffset + topPos - offset,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <div className='w-3/4 m-auto'>
       <div className='md:hidden'>
@@ -25,7 +38,7 @@ export default function Cards(props) {
                   <h1 className='text-[20px] font-bold my-5 mx-2 text-center'>{d.title}</h1>
                   <p className='font-ubuntu font-light text-[13px] '>{d.text}</p>
                 </div>
-                <button className={`${d.theme === 'blue' ? 'bg-[#FCF9DB]' : 'bg-[#9CE7FF]'} p-2 font-bold text-sm rounded-2xl my-4`}>Learn More</button>
+                <button onClick={() => scrollToService(d.id)} className={`${d.theme === 'blue' ? 'bg-[#FCF9DB]' : 'bg-[#9CE7FF]'} p-2 font-bold text-sm rounded-2xl my-4`}>Learn More</button>
               </div>
             </div>
           ))}
@@ -40,7 +53,7 @@ export default function Cards(props) {
                 <h1 className='text-[20px] font-bold my-5 mx-2 text-center'>{d.title}</h1>
                 <p className='font-ubuntu font-light text-[13px] '>{d.text}</p>
               </div>
-              <button className={`${d.theme === 'blue' ? 'bg-[#FCF9DB]' : 'bg-[#9CE7FF]'} p-4 font-bold text-lg rounded-2xl my-4`}>Learn More</button>
+              <button onClick={() => scrollToService(d.id)} className={`${d.theme === 'blue' ? 'bg-[#FCF9DB]' : 'bg-[#9CE7FF]'} p-4 font-bold text-lg rounded-2xl my-4`}>Learn More</button>
             </div>
           </div>
         ))}
