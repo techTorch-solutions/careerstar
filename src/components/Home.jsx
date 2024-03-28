@@ -10,6 +10,8 @@ import hero2 from './images/profile.png'
 import WhatsAppModal from './WhatsAppModal'
 import ContactModal from './ContactModal'
 import { useState } from 'react'
+import Logo from './images/icons/logo.svg'
+import hello from './images/hello.png'
 
 export default function Home() {
 
@@ -99,10 +101,28 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="about" className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
-        <h1 className='md:text-[90px] text-[50px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>About Me</h1>
-        <h2 className='text-[30px] font-bold text-center my-10'>Benson</h2>
+      <div class="flex flex-col gap-10 justify-center content-center text-center">
+      <h2 class=" text-primaryFont text-[90px] font-poppins font-bold justify-center text-center">Join our weekly sessions</h2>
+      <div class=" justify-center content-center m-auto">
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <h3 class=" text-secondaryFont text-[30px] font-extrabold font-mulish">Elevate your growth</h3>
+            <p class=" text-secondaryFont text-justify text-[30px] font-mulish">Experience transformative growth with our weekly Career Meet sessions, held every Wednesday on Google Meet. Join us as we dive deep into topics such as goal setting, mindset mastery, and overcoming challenges. Each session is designed to provide you with actionable insights, personalized feedback, and ongoing support to help you achieve your career goals and unlock your full potential.</p>
+          </div>
+          <div class=" w-[507px] h-[507px]">
+            <img src={hello} alt="hello" />
+          </div>
+        </div>
+      </div>
+      <h3 class=" text-secondaryFont text-center font-mulish text-[35px] font-bold">Ready to Get Started?</h3>
+      </div>
 
+      <div className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
+        <h1 className='md:text-[90px] text-[50px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>About Me</h1>
+        <div className='flex place-content-center m-[auto] mt-10 '>
+          <h2 className='text-[30px] font-bold text-center my-[auto]'>Benson</h2>
+          <img src={Logo} className="h-20 p-2 brightness-0 invert " />
+        </div>
         <div className='flex flex-col md:flex-row m-[auto] gap-20 items-center my-10 '>
           <p className='text-[15px] md:text-[25px] pt-5 md:max-w-[70vw] max-w-[100vw] text-center my-[auto]'>Benson is an hospitality learning & Development (L&D) Enthusiast, passionate trainer and a career coach.
             He is a certified international service standards trainer by Forbes travel Guide and has supported numerous organizations, professionals and students around the world to leverage their potential and elevate their influence.

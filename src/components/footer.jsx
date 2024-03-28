@@ -3,18 +3,11 @@ import { useState } from 'react'
 import WhatsAppModal from './WhatsAppModal'
 import './footer.css'
 import { Link } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom';
+import Logo from './images/icons/logo.svg'
 
 const Footer = () => {
 
     const [open, setOpen] = useState(false)
-
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        navigate('#about');
-        aboutRef.current.scrollIntoView({ behavior: 'smooth' });
-      };
 
     return (
         <>
@@ -42,9 +35,7 @@ const Footer = () => {
                         </div>
 
                         <div className="contact h-full flex flex-col text-black justify-start">
-                            <h1 className='uppercase text-xl font-bold mb-2 text-white underline underline-offset-8'>
-                                Career Star
-                            </h1>
+                        <img src={Logo} className="h-20 p-2  brightness-0 invert" />
                             <div className="flex justify-start icons my-2">
                                 <h1 className='font-semibold'>
                                     Privacy Policy | Terms & Conditions
@@ -64,7 +55,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col justify-start mt-5 md:justify-center md:mt-0 w-1/5 text-black font-semibold ">
                     <Link to={'/'} className='text-xl cursor-pointer'>Home</Link>
-                    <Link className='text-xl cursor-pointer' to={'#about'} onClick={handleClick}>About</Link>
+                    <Link className='text-xl cursor-pointer'>About</Link>
                     <Link to={'/services'} className='text-xl cursor-pointer'>Services</Link>
                 </div>
                 <div className="techtorch w-full text-black font-semibold md:text-end text-center pr-5 pb-5 pl-5">

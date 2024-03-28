@@ -1,6 +1,6 @@
 import React from 'react'
 import Modal from './Modal'
-import hero2 from './images/profile.png'
+import qr from './images/qr.jpeg'
 
 const WhatsAppModal = ({ open, onClose }) => {
     return (
@@ -9,10 +9,10 @@ const WhatsAppModal = ({ open, onClose }) => {
                 <div className="dialog-content flex flex-col items-center justify-between">
                     <h1 className='text-black'>Contact Us on What's App</h1>
                     <div className="waqr">
-                        <img style={{ borderRadius: 15 }} height="300" width="300" src={hero2} alt="" />
+                        <img style={{ borderRadius: 15 }} height="300" width="300" src={qr} alt="" />
                     </div>
                     <p className='text-black'>Or</p>
-                    <p><a className='text-black  underline hover:text-buttons' href="https://wa.link/u43ybj" target="_blank">Click Here</a></p>
+                    <p><a className='text-black  underline hover:text-buttons' href="https://wa.link/ci8vcw" target="_blank">Click Here</a></p>
 
                 </div>
             </div>
