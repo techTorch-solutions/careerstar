@@ -101,12 +101,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div class="flex flex-col gap-10 justify-center content-center text-center">
+      <div class="flex flex-col gap-10 justify-center content-center">
       <h2 class=" text-primaryFont text-[90px] font-poppins font-bold justify-center text-center">Join our weekly sessions</h2>
-      <div class=" justify-center content-center m-auto">
-        <div class="grid grid-cols-2 gap-8">
+      <div class=" justify-center content-center m-auto w-[80%]">
+        <div class="grid grid-cols-2 gap-20">
           <div>
-            <h3 class=" text-secondaryFont text-[30px] font-extrabold font-mulish">Elevate your growth</h3>
+            <h3 class=" text-secondaryFont text-[30px] font-extrabold font-mulish mb-3">Elevate your growth</h3>
             <p class=" text-secondaryFont text-justify text-[30px] font-mulish">Experience transformative growth with our weekly Career Meet sessions, held every Wednesday on Google Meet. Join us as we dive deep into topics such as goal setting, mindset mastery, and overcoming challenges. Each session is designed to provide you with actionable insights, personalized feedback, and ongoing support to help you achieve your career goals and unlock your full potential.</p>
           </div>
           <div class=" w-[507px] h-[507px]">
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h3 class=" text-secondaryFont text-center font-mulish text-[35px] font-bold">Ready to Get Started?</h3>
+      <h3 class=" text-secondaryFont text-center font-mulish text-[35px] font-bold mt-4">Ready to Get Started?</h3>
       </div>
 
       <div className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
