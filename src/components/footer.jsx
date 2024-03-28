@@ -19,11 +19,11 @@ const Footer = () => {
                             <h1 className='text-xl font-bold mb-4'>Contact Details</h1>
                             <div className="flex icons font-bold">
                                 <i className='fa-solid fa-phone text-lg mr-4'></i>
-                                +971 55 8375559
+                              <a href="tel:  +971 55 8375559">  +971 55 8375559</a>
                             </div>
                             <div className="flex icons font-bold">
                                 <i className='fa-solid fa-envelope text-lg mr-4'></i>
-                                careerstar49@gmail.com
+                               <a href="mailto:careerstar49@gmail.com"> careerstar49@gmail.com</a>
                             </div>
                             <div className="mt-4 flex icons ">
                                 <i className="fa-brands fa-facebook-f mr-2 text-2xl "></i>
@@ -54,12 +54,12 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex flex-col justify-start mt-5 md:justify-center md:mt-0 w-1/5 text-black font-semibold ">
-                    <Link to={'/'} className='text-xl cursor-pointer'>Home</Link>
-                    <Link className='text-xl cursor-pointer'>About</Link>
+                    <a href={'/#title'} className='text-xl cursor-pointer'>Home</a>
+                    <a href='/#about'  className='text-xl cursor-pointer'>About</a>
                     <Link to={'/services'} className='text-xl cursor-pointer'>Services</Link>
                 </div>
                 <div className="techtorch w-full text-black font-semibold md:text-end text-center pr-5 pb-5 pl-5">
-                    <h1>Developed by <span className='cursor-pointer inline-block font-bold hover:scale-110 ease-in-out duration-300'>techTorch Solutions</span></h1>
+                <a href="https://techtorch.online" > <h1>Developed by <span className='cursor-pointer inline-block font-bold hover:scale-[105%] hover:px-2 ease-in-out duration-300'>techTorch Solutions</span></h1></a>
                 </div>
             </footer>
             <WhatsAppModal open={open} onClose={() => setOpen(false)} />

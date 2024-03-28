@@ -38,3 +38,6 @@ i:hover {
   display: flex;
   margin: 0px 10px;
 }
+body,html{
+  scroll-behavior: smooth;
+}

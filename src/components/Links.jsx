@@ -7,8 +7,8 @@ const Links = () => {
     const [open, setOpen] = useState(false)
     return (
         <>
-            <Link className='my-3 mx-16 md:m-0' to={'/'}>Home</Link>
-            <Link className='my-3 mx-16 md:m-0'>About</Link>
+            <a href={'/#title'} className='my-3 mx-16 md:m-0' to={'/'}>Home</a>
+            <a href={'/#about'} className='my-3 mx-16 md:m-0'>About</a>
             <Link className='my-3 mx-16 md:m-0' to={'/services'}>Services</Link>
             <Link onClick={() => setOpen(true)} className='bg-buttons my-3 mx-16 md:m-0 font-semibold text-black px-2 rounded-lg'>Contact Us</Link>
             <ContactModal open={open} onClose={() => setOpen(false)} />

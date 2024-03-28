@@ -39,8 +39,8 @@ export default function Home() {
   };
   return (
     <>
-      <div className='flex place-content-center relative my-20'>
-        <div className='z-10'>
+      <div className='flex place-content-center relative my-20' id='title'>
+        <div className='z-10' >
           <h1 className='md:text-[90px] text-[25px] text-center text-[#46B5D8] font-bold drop-shadow-2xl'>We shine with you !</h1>
           <div className='relative right-0 md:hidden flex justify-center'>
             <img width={250} src={hero1} className="relative z-0 md:hidden" />
@@ -119,7 +119,7 @@ export default function Home() {
       <button onClick={() =>  setOpenContact(true)}  className='flex bg-[#33A09A] rounded-lg p-3 text-sm md:text-lg md:px-8 px-4 font-bold m-[auto]'>Ask for Link<img src={LinkIcon} className="ml-4 md:w-8 w-[1.2rem]" /></button>
       </div>
 
-      <div className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
+      <div className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20' id='about'>
         <h1 className='md:text-[75px] text-[50px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>About Me</h1>
         <div className='flex place-content-center m-[auto] mt-10 '>
           <h2 className='text-[30px] font-bold text-center my-[auto]'>Benson</h2>
