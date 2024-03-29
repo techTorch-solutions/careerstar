@@ -12,7 +12,7 @@ const WhatsAppModal = ({ open, onClose }) => {
                         <img style={{ borderRadius: 15 }} height="300" width="300" src={qr} alt="" />
                     </div>
                     <p className='text-black'>Or</p>
-                    <p><a className='text-black  underline hover:text-buttons' href="https://wa.link/ci8vcw" target="_blank">Click Here</a></p>
+                    <p><a className='underline hover:text-black text-buttons cursor-pointer' target="_blank">Click Here</a></p>
 
                 </div>
             </div>
