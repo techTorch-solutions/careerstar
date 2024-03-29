@@ -11,6 +11,8 @@ import WhatsAppModal from './WhatsAppModal'
 import ContactModal from './ContactModal'
 import { useState } from 'react'
 import Logo from './images/icons/logo.svg'
+import hello from './images/career-meet.jpeg'
+import LinkIcon from './images/icons/linkIcon.svg'
 
 export default function Home() {
 
@@ -100,40 +102,34 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='aboutme' className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20'>
-        <h1 className='md:text-[90px] text-[50px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>About Me</h1>
+      <div className=" p-4 md:p-0 flex flex-col gap-10 md:w-[70%] w-[100%] justify-center content-center m-[auto]">
+        <h2 className='md:text-[50px] text-[25px] text-[#46B5D8] font-bold text-center '>Career Meet - Join Every Wednesday</h2>
+        <div className=" ">
+          <div className="grid md:grid-cols-3 grid-cols-1 justify-center gap-14 ">
+            <div className=" col-span-2 ">
+              <h3 className='text-[30px] text-center md:text-left font-bold'>Elevate your growth</h3>
+              <p className='text-[15px] md:text-[25px] pt-5 md:max-w-[40vw] max-w-full text-center md:text-left'>Experience transformative growth with our weekly Career Meet sessions, held every Wednesday on Google Meet. Join us as we dive deep into topics such as goal setting, mindset mastery, and overcoming challenges. Each session is designed to provide you with actionable insights, personalized feedback, and ongoing support to help you achieve your career goals and unlock your full potential.</p>
+            </div>
+            <div className=" col-span-1  m-[auto]">
+              <img src={hello} alt="hello" width={700} height={700} />
+            </div>
+          </div>
+        </div>
+        <h3 className=" text-secondaryFont text-center font-mulish text-[35px] font-bold mt-4">Ready to Get Started?</h3>
+        <button onClick={() => setOpenContact(true)} className='flex bg-[#33A09A] rounded-lg p-3 text-sm md:text-lg md:px-8 px-4 font-bold m-[auto]'>Ask for Link<img src={LinkIcon} className="ml-4 md:w-8 w-[1.2rem]" /></button>
+      </div>
+
+      <div className='md:w-[70vw] max-w[90vw] m-[auto] gap-20 my-20' id='aboutme'>
+        <h1 className='md:text-[75px] text-[50px] text-[#46B5D8] font-bold text-center underline decoration-white decoration-dashed decoration-4 underline-offset-[30px]'>About Me</h1>
         <div className='flex place-content-center m-[auto] mt-10 '>
           <h2 className='text-[30px] font-bold text-center my-[auto]'>Benson</h2>
           <img src={Logo} className="h-20 p-2 brightness-0 invert " />
         </div>
-        <div>
-          <h1 className='text-[20px] text-[#46B5D8] font-bold text-center my-[auto]'>
-            Hospitality Learning & Development Enthusiast | Trainer | Career Coach
-          </h1>
-        </div>
         <div className='flex flex-col md:flex-row m-[auto] gap-20 items-center my-10 '>
-          <p className='text-[15px] md:text-[25px] pt-5 md:max-w-[70vw] max-w-[100vw] text-center md:text-left my-[auto]'>I am a passionate trainer and career coach with extensive experience in Learning & Development and Service excellence. I have helped <span className='text-buttons font-bold'>50+</span> organizations and countless professionals around the world leverage their potential and elevate their influence. I offer a variety of customized programs and services to prepare Employees, Supervisors, Managers and Senior Leaders for success in their current & future roles.
+          <p className='text-[15px] md:text-[25px] pt-5 md:max-w-[40vw] max-w-[90vw] text-center md:text-left'>Benson is an hospitality learning & Development (L&D) Enthusiast, passionate trainer and a career coach.
+            He is a certified international service standards trainer by Forbes travel Guide and has supported numerous organizations, professionals and students around the world to leverage their potential and elevate their influence.
           </p>
           <img src={hero2} className="w-80" />
-        </div>
-        <div className='text-center'>
-          <h2 className='text-[#46B5D8] font-bold  text-[30px]'>
-            MY QUICK CREDENTIALS CHECKLIST
-          </h2>
-          <ul className='md:text-[25px] text-[15px]'>
-            <li>
-              Bachelor’s degree in business administration (University of West London - UAE)
-            </li>
-            <li>
-              Have successfully built and exited a reputable staffing business.
-            </li>
-            <li>
-              Empathetic, Active listener and genuinely interested.
-            </li>
-            <li>
-              Assisted <span className='text-buttons font-bold'>700+</span> job seekers land their dream jobs.
-            </li>
-          </ul>
         </div>
       </div>
       <WhatsAppModal open={openWhatsapp} onClose={() => setOpenWhatsapp(false)} />

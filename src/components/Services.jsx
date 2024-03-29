@@ -5,7 +5,7 @@ import chess from './images/strategy2.png'
 import wpIcon from './images/icons/Group.png'
 import calIcon from './images/icons/calendar-clock.png'
 import Modal from "./Modal";
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
 import ContactModal from "./ContactModal";
 import WhatsAppModal from "./WhatsAppModal";
 
@@ -64,7 +64,7 @@ export default function Services() {
       img: painter
     },
     {
-      title: 'Career Coaching',
+      title: 'Czareer Coaching',
       id: 'career',
       desc: 'Begin your career journey with our coaching services. Our expert coaches help you land your dream job, navigate transitions, and advance your career. From resume optimization to interview prep, we provide the tools for success. Partner with us to achieve your career goals.',
       img: scholar

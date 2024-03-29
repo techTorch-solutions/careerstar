@@ -13,13 +13,14 @@ body {
 }
 
 i,
-span {
+span,
+.fa-brands {
   cursor: pointer;
   transition: all 300ms ease-in-out;
   color: black;
 }
 
-i:hover {
+.fa-brands:hover {
   transform: scale(1.3);
 }
 
@@ -37,4 +38,9 @@ i:hover {
 .slick-slide>div {
   display: flex;
   margin: 0px 10px;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
 }

@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 import Modal from './Modal'
 import Logo from './images/icons/logo.svg'
+import { Link } from 'react-router-dom'
 
 const ContactModal = ({ open, onClose }) => {
+    const instaLink = "https://www.instagram.com/careerstar_grow?igsh=MTV1ZzFwanlzNDZvag%3D%3D&utm_source=qr"
+    const linkedInLink = "https://www.linkedin.com/company/career-star/"
+    const waLink = "https://wa.link/ci8vcw"
     return (
         <>
             <Modal open={open} onClose={onClose}>
@@ -17,21 +21,21 @@ const ContactModal = ({ open, onClose }) => {
 
                         <div className="mt-1 sm:mx-auto sm:w-full sm:max-w-sm">
                             <h1 className='text-xl font-bold mb-4 text-black'>Contact Details</h1>
-                            <div className="flex icons font-bold text-black">
+                            <Link to={"tel:  +971 55 8375559"} className="flex icons font-bold text-black">
                                 <i className='fa-solid fa-phone text-lg mr-4'></i>
                                 +971 55 8375559
-                            </div>
-                            <div className="flex icons font-bold text-black">
+                            </Link>
+                            <Link to={"mailto:careerstar49@gmail.com"} className="flex icons font-bold text-black">
                                 <i className='fa-solid fa-envelope text-lg mr-4'></i>
                                 careerstar49@gmail.com
-                            </div>
+                            </Link>
                         </div>
                         <div className="mt-4 flex icons ">
-                            <i className="fa-brands fa-facebook-f mr-2 text-2xl"></i>
-                            <i className='fa-brands fa-x-twitter mx-2 text-2xl'></i>
-                            <i className='fa-brands fa-instagram mx-2 text-2xl' ></i>
-                            <i className='fa-brands fa-linkedin mx-2 text-2xl'></i>
-                            <i className='fa-brands fa-whatsapp mx-2 text-2xl'></i>
+                            <i className="fa-brands fa-facebook-f mr-2 text-2xl "></i>
+                            <i className='fa-brands fa-x-twitter mx-2 text-2xl '></i>
+                            <Link to={instaLink} className='fa-brands fa-instagram mx-2 text-2xl' ></Link>
+                            <Link to={linkedInLink} className='fa-brands fa-linkedin mx-2 text-2xl '></Link>
+                            <Link to={waLink} className='fa-brands fa-whatsapp mx-2 text-2xl '></Link>
                         </div>
                     </div>
 

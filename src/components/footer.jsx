@@ -8,7 +8,8 @@ import Logo from './images/icons/logo.svg'
 const Footer = () => {
 
     const [open, setOpen] = useState(false)
-
+    const instaLink = "https://www.instagram.com/careerstar_grow?igsh=MTV1ZzFwanlzNDZvag%3D%3D&utm_source=qr"
+    const linkedInLink = "https://www.linkedin.com/company/career-star/"
     return (
         <>
 
@@ -19,23 +20,23 @@ const Footer = () => {
                             <h1 className='text-xl font-bold mb-4'>Contact Details</h1>
                             <div className="flex icons font-bold">
                                 <i className='fa-solid fa-phone text-lg mr-4'></i>
-                                +971 55 8375559
+                                <a href="tel:  +971 55 8375559">  +971 55 8375559</a>
                             </div>
                             <div className="flex icons font-bold">
                                 <i className='fa-solid fa-envelope text-lg mr-4'></i>
-                                careerstar49@gmail.com
+                                <a href="mailto:careerstar49@gmail.com"> careerstar49@gmail.com</a>
                             </div>
                             <div className="mt-4 flex icons ">
                                 <i className="fa-brands fa-facebook-f mr-2 text-2xl "></i>
                                 <i className='fa-brands fa-x-twitter mx-2 text-2xl '></i>
-                                <i className='fa-brands fa-instagram mx-2 text-2xl' ></i>
-                                <i className='fa-brands fa-linkedin mx-2 text-2xl '></i>
+                                <Link to={instaLink} className='fa-brands fa-instagram mx-2 text-2xl' ></Link>
+                                <Link to={linkedInLink} className='fa-brands fa-linkedin mx-2 text-2xl '></Link>
                                 <i onClick={() => setOpen(true)} className='fa-brands fa-whatsapp mx-2 text-2xl '></i>
                             </div>
                         </div>
 
                         <div className="contact h-full flex flex-col text-black justify-start">
-                        <img src={Logo} className="h-20 p-2  brightness-0 invert" />
+                            <img src={Logo} className="h-20 p-2  brightness-0 invert" />
                             <div className="flex justify-start icons my-2">
                                 <h1 className='font-semibold'>
                                     Privacy Policy | Terms & Conditions
@@ -59,7 +60,7 @@ const Footer = () => {
                     <Link to={'/services'} className='text-xl cursor-pointer'>Services</Link>
                 </div>
                 <div className="techtorch w-full text-black font-semibold md:text-end text-center pr-5 pb-5 pl-5">
-                    <h1>Developed by <span className='cursor-pointer inline-block font-bold hover:scale-110 ease-in-out duration-300'>techTorch Solutions</span></h1>
+                    <Link to="https://techtorch.online" > <h1>Developed by <span className='cursor-pointer inline-block font-bold hover:scale-[105%] hover:px-2 ease-in-out duration-300'>techTorch Solutions</span></h1></Link>
                 </div>
             </footer>
             <WhatsAppModal open={open} onClose={() => setOpen(false)} />
