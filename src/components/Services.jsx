@@ -64,7 +64,7 @@ export default function Services() {
       img: painter
     },
     {
-      title: 'Czareer Coaching',
+      title: 'Career Coaching',
       id: 'career',
       desc: 'Begin your career journey with our coaching services. Our expert coaches help you land your dream job, navigate transitions, and advance your career. From resume optimization to interview prep, we provide the tools for success. Partner with us to achieve your career goals.',
       img: scholar
